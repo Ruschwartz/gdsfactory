@@ -15,7 +15,7 @@ You'll need 2 windows:
 
 ## 2. File-watcher flow
 
-For building large components can use a file-watcher and see your updates in KLayout every time you save.
+For building large components you can use a file-watcher and see your updates in KLayout every time you save.
 
 1. You execute the file watcher run this command on your terminal `gf watch --path /home/jmatres/my_chips` for watching `my_chips` folder or run it in the current working directory `gf watch --path .`
 2. The file-watcher re-runs any python file `.py` or YAML `.pic.yml`. For testing it you can go to `gdsfactory/samples/demo/circuits`, modify any of the files and take a look how klayout updates every time you save a file.
@@ -34,7 +34,7 @@ or YAML
 ## 3. Schematic driven layout
 
 1. You can use any Schematic capture tool. Lumerical interconnect, QUCS or Xschem. Save the netlist into SPICE format.
-2. Convert SPICE to YAML. As the schematic didn't have placements you can infer the rought initial placements from the relative position of the schematic blocks.
+2. Convert SPICE to YAML. Since the schematic doesn't have placements you can infer the rough initial placements from the relative position of the schematic blocks.
 3. Modify YAML with file watcher until you are happy with the placements.
 
 ![SDL](https://i.imgur.com/1VnCsPt.png)
